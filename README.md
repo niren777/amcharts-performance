@@ -1,6 +1,6 @@
 ## Setup Project
 
-- Install Apache Cordova and the Android SDK on a Linux machine as explained [here](https://evothings.com/doc/build/cordova-install-linux.html) and on Windows as explained [here](https://evothings.com/doc/build/cordova-install-windows.html)
+- Install Apache Cordova and the Android SDK on a Linux machine as explained [here](https://evothings.com/doc/build/cordova-install-linux.html)
 
 - Make sure the following installed properly with appropriate versions
 
