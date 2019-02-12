@@ -1,0 +1,65 @@
+@media only screen and (min-device-width: 600px) and (-webkit-min-device-pixel-ratio: 1) {
+  body {
+    zoom: 100% $important;
+  }
+
+  #a0-lock .a0-overlay.a0-active {
+    height: 0 $important;
+  }
+
+  #a0-lock.a0-theme-default .a0-overlay.a0-active,
+  #a0-lock.a0-theme-default .a0-overlay.a0-active .a0-panel {
+    background-color: $white $important;
+  }
+
+  .btn {
+    line-height: 40px;
+  }
+
+  .btn-large {
+    line-height: 56px $important;
+  }
+
+  .header-btn .btn-flat {
+    line-height: 40px $important;
+  }
+
+  nav .side-nav li:not(:first-child) {
+    line-height: 56px $important;
+  }
+
+  .custom-menu {
+    line-height: 56px $important;
+  }
+
+  .home-page {
+    // .home-flexible-area {
+    //   img {
+    //     width: auto;
+    //   }
+    // }
+
+    .home-footer {
+      width:100%;
+    }
+  }
+
+  .tag-status-page {
+    .tab-content {
+      height: 65% $important;
+    }
+  }
+
+  div.scroll {
+    height: 1000px;
+    overflow: auto;
+  }
+
+  .width3x {
+    width: 450px $important;
+  }
+
+  .width33x {
+    width: 450px $important;
+  }
+}

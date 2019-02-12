@@ -1,0 +1,131 @@
+// scss-lint:disable all
+
+.logLEDPage {
+	.collection {
+		.collection-item{
+			i{
+				&.circle{
+					background-color: transparent $important;
+					color:$cyan;
+				}
+			}
+			.icon-file{
+				font-size: $fontsize22 + 1px $important;
+				margin-top: -7px;
+			}
+			.icon-info{
+				font-size: $fontsize36 - 2px $important;
+				margin-top: -7px;
+			}
+			.title{
+				color:$cyan;
+				font-size: $fontsize22;
+				margin-bottom: $margin1x;
+			}
+			p{
+				font-size: $fontsize18;
+				height: $height3x + 4px;
+				line-height: $height3x + 4px;
+				i{
+					font-style: normal $important;
+					margin-left: -8px $important;
+				}
+				span{
+					&:first-child{
+						width:65px;
+						display: $display-inline-block;
+						margin-right: 5px;
+					}
+				}
+			}
+			.userPattern{
+
+				span{
+					margin-right:2px;
+				}
+			}
+			h3{
+				line-height:$line-height3x;
+				text-align: justify;
+			}
+		}
+	}
+}
+
+/* LED icon */
+.logLEDPage{
+	.collection{
+		.collection-item{
+			.icon-r, .icon-g{
+				font-size: 20px;
+				vertical-align: $middle;
+			}
+			.icon-rr, .icon-gg{
+				font-size: 30px;
+				vertical-align: $middle;
+			}
+			.icon-rrr{
+				font-size: 30px;
+				vertical-align: $middle;
+			}
+		}
+	}
+}
+
+/* User destails */
+.userDisplay{
+	display: $display-flex;
+	display: -webkit-box;
+	font-style: normal;
+	span:nth-child(2){
+		width: 85%;
+	}
+}
+
+/* Log button */
+.logPadding{
+		margin-top: $margin1x;
+		button{
+			line-height: $line-height4x $important;
+			font-size: $fontsize20 $important;
+			padding: $padding0x $padding2x + 4px;
+			height: 42px $important;
+			.icon-file{
+				font-size: $fontsize16 $important;
+			}
+		}
+	}
+
+/* Log LED pattern modal style */
+
+.modal-content {
+    .radio {
+        span {
+            div {
+                margin-right: -$margin3x;
+                margin-top: -2px;
+            }
+        }
+        .icon-r, .icon-g{
+            font-size: 23px;
+            line-height: 20px;
+        }
+        .icon-rrr{
+            font-size: 34px;
+            line-height: 14px;
+        }
+        .icon-rr, .icon-GG{
+            font-size: 34px;
+            line-height: 14px;
+        }
+    }
+}
+.ledPattern{
+    margin-bottom: 10px;
+}
+.modalOverFlow span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    white-space: pre;
+}

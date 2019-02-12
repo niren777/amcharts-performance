@@ -1,0 +1,23 @@
+.specialize-report-list-page {
+  .collection {
+    @extend %list-collection-style;
+  }
+
+  .title {
+    color: $gray $important;
+    margin-top: $margin1x;
+  }
+}
+
+.report-place-holder {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  // top: 0;
+  width: 100%;
+}
+
+// .explorationContainer .exploreCanvas {
+//   margin-top: 50px $important;
+// }

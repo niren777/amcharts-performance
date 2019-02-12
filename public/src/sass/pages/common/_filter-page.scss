@@ -1,0 +1,200 @@
+.filter-page {
+  .radio {
+    margin-left: 10px;
+    width: 92%;
+
+    span {
+      @extend %truncate;
+      height: 27px;
+      line-height: 16px $important;
+      width: 90%;
+    }
+  }
+
+  .active span {
+    color: $paragraph-color $important;
+  }
+
+  .checkbox {
+    display: -webkit-box;
+    display: -webkit-inline-box;
+    display: flex;
+    // display: inline-flex;
+    height: $height3x - 2px $important;
+    margin-left: 5px $important;
+    width: 98% $important;
+
+    span {
+      @extend %truncate;
+      color: $gray $important;
+      font-size: 19px $important;
+      line-height: $line-height3x - 3px $important;
+      margin-left: 5px $important;
+      width: 85%;
+    }
+  }
+
+  .disabled {
+    .square-btn::before {
+      background-color: $cloud;
+      border-radius: 3px;
+      font-size: 23px $important;
+      line-height: 48px;
+      margin-left: 4px;
+    }
+
+    span {
+      color: $cloud;
+    }
+  }
+}
+
+//scss-lint:disable all
+.filter-page {
+  .filter-page-tab {
+    background: $white-smoke $important;
+    bottom: 0;
+    margin-top: 66px;
+    position: absolute;
+    top: 0;
+    width: 33%;
+
+    .indicator {
+      display: none;
+    }
+
+    .tabs {
+      background: $white-smoke $important;
+      display: inline;
+      white-space: normal $important;
+
+      .active {
+        background-color: $white  $important;
+        border-right: 3px solid $cyan;
+
+        p {
+          color: $cyan;
+          font-size: 18px;
+        }
+
+        i {
+          color: $cyan;
+          font-size: 30px;
+        }
+      }
+
+      .tab {
+        height: 60px;
+        line-height: 60px;
+        width: 100%;
+
+        a {
+          color: $dark-2-gray;
+          padding-top: 20px;
+
+          i {
+            font-size: 40px;
+            margin-top: -7px;
+            position: absolute;
+            vertical-align: text-bottom;
+          }
+
+          p {
+            @extend %truncate;
+            font-size: 16px;
+            margin-top: -15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//scss-lint:disable all
+// Date picker //
+.filter-page {
+  .date-picker-div {
+    margin: 0 30px 0 50px;
+
+    .date-div {
+      margin: 15px 0;
+
+      input[type=text] {
+        height: 2rem $important;
+      }
+    }
+  }
+
+  .picker--opened .picker__frame {
+    top: 7% $important;
+
+    select {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      background: transparent url('../img/caretDown.png') no-repeat right center;
+      background-size: 14px;
+      padding: 2px 30px 2px 2px;
+    }
+  }
+
+  .picker {
+    outline: none $important;
+
+    .picker__box {
+      border: none $important;
+    }
+  }
+
+  .picker__frame {
+    min-width: 80% $important;
+
+    .picker__weekday-display {
+      background-color: #0097a7 $important;
+    }
+
+    .picker__date-display {
+      background-color: $cyan $important;
+    }
+
+    .picker__header {
+      margin-bottom: .75em;
+    }
+
+    .picker__day--selected,
+    .picker__day--selected:hover,
+    .picker--focused .picker__day--selected {
+      background-color: $cyan $important;
+      height: 50px $important;
+      width: 50px $important;
+    }
+
+    .picker__day.picker__day--today {
+      background-color: transparent $important;
+      color: $cyan;
+      font-weight: 700;
+    }
+
+    .picker__close,
+    .picker__today {
+      color: $cyan $important;
+    }
+
+    .picker__header {
+      margin-bottom: 1em $important;
+    }
+
+    .picker__nav--prev,
+    .picker__nav--next {
+      top: .15em $important;
+    }
+  }
+}
+
+.filter-page-tab-content {
+  margin-top: 15px;
+
+  .actions-list {
+    margin-bottom: 20px;
+  }
+}

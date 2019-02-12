@@ -1,0 +1,22 @@
+.history-page .collection .collection-item.avatar,
+.tag-list .collection .collection-item.avatar,
+.your-summaries-page .collection .collection-item.avatar {
+  padding-left: 80px $important;
+}
+
+.edit-summary .marBottom {
+  margin-top: -5px $important;
+}
+
+
+.history-page,
+.your-summaries-page,
+.tag-list {
+  .collection {
+    .collection-item {
+        &.avatar i.circle {
+          margin-top: 3px;
+      }
+    }
+  }
+}

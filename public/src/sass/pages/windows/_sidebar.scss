@@ -1,0 +1,36 @@
+/* unit toogle */
+
+.switch {
+    label {
+        .lever {
+            &:after {
+                line-height: 1.7;
+            }
+        }
+        input[type=checkbox]:checked + .lever {
+            &:after {
+                line-height: 1.7;
+            }
+        }
+    }
+}
+nav .side-nav {
+    li {
+        .userDetails {
+            p {
+                font-size: $fontsize18;
+            }
+            a {
+                font-size: $fontsize18;
+            }
+        }
+        span {
+            font-size: $fontsize18;
+        }
+    }
+}
+
+.side-nav{
+    height:-moz-calc(100%) $important;
+    height:calc(100%) $important;
+}

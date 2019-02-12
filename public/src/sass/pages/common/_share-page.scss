@@ -1,0 +1,46 @@
+//scss-lint:disable NestingDepth SelectorDepth
+.share-page {
+  margin-bottom: -$margin2x $important;
+
+  .btn {
+    @extend %btn-cyan;
+  }
+
+  div {
+    h4 {
+      padding: $padding2x $padding0x $padding1x + 5px;
+      text-align: center;
+    }
+
+    a {
+      margin-bottom: $margin2x;
+
+      i {
+        font-size: $fontsize16;
+        margin-right: $margin1x - 5px;
+      }
+    }
+  }
+
+  h5 {
+    @extend %list-title;
+  }
+
+  .card {
+    margin: 0 0 1rem $important;
+    position: fixed;
+    width: $width100;
+  }
+
+  .member-list {
+    margin-top: 120px;
+
+    .square-btn {
+      margin-top: -3px $important;
+    }
+  }
+
+  .checkbox {
+    height: 40px;
+  }
+}

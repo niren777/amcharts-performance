@@ -1,0 +1,85 @@
+// List of aggregation unit style //
+
+.aggregation-unit-list-page {
+
+  .collection {
+    @extend %list-collection-style;
+  }
+
+  .disabled {
+    // scss-lint:disable all
+    i.circle { // scss-lint:disable
+      background-color: $grey-lighten-1 $important;
+    }
+
+    .title {
+      color: $gray $important;
+      margin-top: $margin1x;
+    }
+  }
+}
+
+// scss-lint:enable
+// Sucess message page //
+
+.success-message-page {
+  @extend %wrapper-center;
+  width: $width100;
+
+  h3 {
+    font-size: 21px;
+    line-height: 32px;
+    margin-bottom: $margin1x;
+    margin-top: 10px;
+    padding: 0 15px;
+   }
+
+  button {
+    margin: 15px 0;
+  }
+}
+
+// Single line list //
+.single-line-list {
+  .title {
+    margin-top: $margin1x;
+  }
+}
+
+// Scanned list of ID page //
+.scanned-id-list-page {
+  @extend %separator;
+}
+
+// Showing representative image page style //
+.representive-label-page {
+  @extend %center;
+  padding: 0 $padding1x $important;
+
+  h3 {
+    line-height: 30px;
+    padding: $padding2x 0 $padding3x;
+	}
+
+  .image-container {
+    height: 500px;
+    line-height: 500px;
+
+    // scss-lint:disable all
+    .loading-text {
+      img {
+        width: 90%;
+      }
+    }
+
+    img {
+      max-height: 500px;
+      max-width: $width100;
+      vertical-align: $middle;
+    }
+  }
+
+  button {
+    margin-top: $margin3x;
+	}
+}

@@ -1,0 +1,45 @@
+//scss-lint:disable all
+
+.edit-summary {
+  margin-top: $margin3x;
+
+  div {
+    &:first-child {
+      border-bottom: 1px solid $gray;
+      height: $height10x + $height5x + 5px;
+
+        .input-field {
+          margin: 0 auto;
+          width: $width80 + 5%;
+
+            button {
+              margin-top: $margin2x;
+            }
+          }
+    }
+
+    &:nth-child(2) {
+      margin-bottom: $margin2x;
+
+      .collection {
+        border-bottom: 1px solid $gray;
+
+          .collection-item {
+            i.circle {
+              background: transparent;
+              color: $cyan;
+              font-size: $fontsize36 + 1px;
+            }
+
+            p {
+              color: $gray;
+            }
+
+            h3 {
+              margin-bottom: $margin1x;
+            }
+          }
+        }
+      }
+  }
+}

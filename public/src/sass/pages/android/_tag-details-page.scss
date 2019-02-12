@@ -1,0 +1,93 @@
+.tag-status-page {
+  .collection {
+    .collection-item.avatar {
+      .circle {
+        font-size: 13px;
+        height: 45px;
+        line-height: 46px;
+        text-align: center;
+        width: 45px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      i.circle {
+        line-height: 45px;
+      }
+    }
+  }
+}
+
+.tab-content {
+  bottom: 0;
+  height: 55%;
+  overflow: auto;
+  position: fixed;
+  top: 293px;
+  width: 100%;
+  zoom: 115%;
+
+  .collection .collection-item {
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
+
+    &:first-child {
+      margin-top: 5px;
+    }
+  }
+}
+
+.temperature-alert .collection .collection-item.avatar .circle {
+  sup {
+    top: -0.4em $important;
+    // font-size: 50% $important;
+  }
+}
+
+.info {
+  .collection {
+    .collection-item {
+        p {
+          font-size: 14px;
+        }
+      }
+  }
+}
+
+.tag-status-page .collection .collection-item.avatar {
+  padding-left: 72px $important;
+}
+
+.temperature-alert-div h1 sup {
+  font-size: 40% $important;
+  margin-left: -15px $important;
+  top: -1.1em $important;
+}
+
+.status-temperature sup {
+  font-size: 40%;
+  margin-left: 2px;
+  top: -1.2em;
+}
+
+.life-alert .collection .collection-item.avatar {
+  span {
+    &.circle {
+      background: transparent;
+    }
+  }
+}
+
+.status {
+  &.text-icon {
+    line-height: 45px $important;
+  }
+}
+
+.collection .collection-item.avatar {
+  padding-left: 72px;
+}

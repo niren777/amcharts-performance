@@ -1,0 +1,65 @@
+//scss-lint:disable all
+.log-modal-page {
+  margin-top: 5px;
+
+  .input-field {
+    margin-bottom: 20px;
+  }
+
+  i {
+    font-style: normal;
+  }
+
+  .icon-location {
+    font-size: 40px;
+  }
+
+  .icon-mail,
+  .icon-briefcase {
+    font-size: 26px;
+    margin-top: 10px;
+  }
+
+  .input-field .prefix.active {
+    color: $cyan;
+  }
+
+  .select-biz-steps {
+    margin-left: 19%;
+    margin-top: -2%;
+    width: 81%;
+  }
+
+  .select-tagstep-label {
+    top: -24px $important;
+  }
+
+  .select-wrapper span.caret{
+    font-size: 30px $important;
+    top: 6px;
+  }
+}
+
+.select-active {
+    // background-color: red $important;
+  .icon-map-o {
+    color: $cyan $important;
+  }
+
+  input {
+  // border-bottom:2px solid $cyan $important;
+  }
+
+  // label {
+  //  color:blue $important;
+  // }
+}
+
+.margin-top {
+  margin-top: 30px;
+}
+
+.dropdown-content {
+  max-height: 250px;
+  right: 0 $important;
+}

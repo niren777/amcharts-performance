@@ -1,0 +1,113 @@
+.container {
+  width: $width100 - 2%;
+}
+// .button-collapse,
+.header-icon {
+  float: left;
+  height: $height6x + 6px;
+  padding-left: $padding1x + 2px;
+  padding-right: $padding1x + 2px;
+  position: $position-relative;
+  z-index: 1;
+
+  i {
+    font-size: $fontsize22 $important;
+    height: $height6x + 6px;
+    line-height: $line-height6x + 6px;
+  }
+}
+
+.hamburger {
+  font-size: $fontsize28 - 2px $important;
+  margin-left: -6px;
+}
+
+.microphone {
+  float: right;
+  font-size: 1.6rem;
+  margin-right: 20px;
+}
+
+.brand-logo {
+  font-family: roboto-regular;
+  font-size: $fontsize22 $important;
+
+  .icon {
+    font-size: 30px $important;
+    margin-left: 7px;
+    margin-top: -5px;
+  }
+}
+
+.nav-wrapper {
+  h3 {
+    margin-bottom: $margin1x - 7px;
+    margin-top: $margin1x - 7px;
+    padding: 6px 0;
+  }
+}
+
+.navbar-fixed {
+  height: $height6x + 6px;
+
+  nav {
+    box-shadow: none;
+    height: $height6x + 6px $important;
+    line-height: $line-height6x + 6px $important;
+  }
+}
+
+nav .button-collapse i {
+  line-height: $line-height6x + 6px $important;
+}
+
+.header-btn .btn-flat {
+  font-size: $fontsize20;
+}
+
+// Log LED pttern icon stying in App bar //
+
+.led-log {
+  display: $display-flex;
+  margin-top: $margin1x + 5px;
+
+  .icon-led {
+    margin-right: $margin1x - 4px;
+  }
+
+  .icon-circle-triple {
+    font-size: $fontsize36 - 1px $important;
+    margin-top: 1px;
+  }
+
+  .icon-circle-double {
+    font-size: $fontsize36 - 1px $important;
+    margin-top: 2px;
+  }
+
+  .icon-circle {
+    font-size: $fontsize24 $important;
+    margin-top: $margin1x - 2px;
+  }
+}
+
+.edit-summary-header {
+  width: 290px $important;
+}
+
+.sub-header-width {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 330px;
+}
+
+.noicon {
+  margin-left: -40px;
+}
+
+.appbar-black-text {
+  a,
+  span {
+    color: $black $important;
+  }
+}

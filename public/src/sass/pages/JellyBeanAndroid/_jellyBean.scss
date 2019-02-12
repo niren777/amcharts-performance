@@ -1,0 +1,338 @@
+// Common style
+
+.other-phone {
+  display: $display-none;
+}
+
+ // Landing page
+
+.wrapper {
+  @extend %height-full;
+  position: $position-absolute;
+}
+
+.landing-page {
+  left: 195px $important;
+}
+
+// share page
+
+.active .square-btn div:before {
+  margin-top: -38px $important;
+}
+
+// app fixed on scroll
+.navbar-fixed {
+  position: fixed;
+}
+
+.android-jelly-layout {
+  margin-top: 66px;
+}
+
+.edit-summary {
+  margin-top: $margin0x $important;
+
+  .android-jelly-layout {
+    margin-top: 96px;
+  }
+}
+
+.filter-page {
+  margin-top: $margin0x $important;
+  .android-jelly-layout {
+    margin-top: 86px;
+  }
+}
+
+.filter-page-tab-content {
+  margin-top: -10px $important;
+}
+
+// Header log button //
+
+.only-running-summary .bottom-bar div {
+  display: -webkit-inline-box $important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.log-button {
+  display: -webkit-box $important;
+  margin-top: 2px;
+}
+
+.led-log {
+  display: -webkit-inline-box $important;
+  margin-top: -10px $important;
+
+  .icon-led {
+    margin-right: 6px;
+  }
+
+  .icon-circle-triple {
+    vertical-align: $middle;
+  }
+
+  .icon-circle-double {
+    vertical-align: $middle;
+  }
+
+  .icon-circle {
+    vertical-align: $sub;
+  }
+}
+
+.led-icon-font {
+  vertical-align: top;
+
+  .icon-circle-triple,
+  .icon-circle-double,
+  .icon-circle {
+    line-height: inherit;
+  }
+}
+
+// Sidebar
+
+.side-nav .user-circle {
+  border: none $important;
+  padding-top: 5px;
+}
+
+.side-nav {
+  background-color: $white  $important;
+  box-shadow: none $important;
+  padding-bottom: 0;
+}
+
+.switch span {
+  display: inline-block $important;
+}
+
+#sidenav-overlay {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+// Your summaries aligment
+
+.summaries-running-header {
+  display: -webkit-inline-box $important;
+}
+
+.collection .collection-item.avatar .circle{
+  display: visible $important;
+}
+
+// Auth0 login input and label alignment //
+
+#a0-lock.a0-theme-default .a0-panel .a0-email input {
+  font-size: 16px;
+  top: -5px $important;
+}
+
+#a0-lock.a0-theme-default .a0-panel .a0-email label {
+  font-size: 16px;
+  // top: -6px $important;
+}
+
+#a0-lock.a0-theme-default .a0-panel .a0-email .a0-input-box i{
+  font-size: 80px $important;
+  left: 11px;
+  top: 10px $important;
+}
+
+#a0-lock.a0-theme-default .a0-icon-budicon-5 {
+  background: url('../img/icon/mail-o.png');
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+
+  &::before {
+    color: transparent $important;
+    font-family: none $important;
+  }
+}
+
+#a0-lock.a0-theme-default .a0-icon-budicon {
+  background: url('../img/icon/lock.png');
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
+
+  &::before {
+    color: transparent $important;
+    font-family: none $important;
+  }
+}
+
+#a0-lock.a0-theme-default .a0-panel .a0-close {
+  background: url('../img/icon/backarrow.png');
+  background-repeat: no-repeat;
+  background-size: 25px 22px;
+  margin-left: 20px;
+  margin-top: -9px;
+
+  &::before {
+    color: transparent $important;
+    font-family: none $important;
+  }
+}
+
+#a0-lock.a0-theme-default .a0-panel .a0-password .a0-input-box i,
+#a0-lock.a0-theme-default .a0-panel .a0-repeatPassword .a0-input-box i {
+  font-size: 80px $important;
+  left: 10px $important;
+  top: 10px $important;
+}
+
+#a0-lock.a0-theme-default .a0-icon-budicon-3::before {
+  content: "\e90c";
+  @extend %icon-font-family;
+}
+
+// About page //
+
+.about-page,
+.handover-confirmation-code-page,
+.handover-page,
+.success-message-page,
+.no-aggregation-unit-page,
+.no-history-data-page,
+.no-filter-action-page {
+  left: 230px $important;
+}
+
+// android 4.2 loader //
+
+.preloader-wrapper.active {
+  animation: none;
+}
+
+@-webkit-keyframes rotate-forever {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rotate-forever {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-forever {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.loading-spinner {
+  -webkit-animation-duration: 0.75s;
+  -moz-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: rotate-forever;
+  -moz-animation-name: rotate-forever;
+  animation-name: rotate-forever;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
+  height: 40px;
+  width: 40px;
+  border: 4px solid #0f9d58;
+  border-right-color: transparent;
+  border-radius: 50%;
+  display: $display-inline-block;
+}
+
+.tab {
+  float: none $important;
+}
+
+.indicator {
+  bottom: 2px $important;
+}
+
+.check-point-page,
+.flash-led-page {
+  .dropdown-content{
+    max-height: 200px $important;
+  }
+}
+
+.only-running-summary .bottom-bar div .cyan {
+  max-width: 200px;
+}
+
+.log-modal-page {
+  .dropdown-content {
+    overflow-y: visible $important;
+    max-height: 230px $important;
+    right: 10px $important;
+  }
+}
+
+.btn-md {
+  line-height: 40px $important;
+}
+
+.picker__day--selected,
+.picker__day--selected:hover,
+.picker--focused .picker__day--selected {
+  border: none $important;
+}
+
+.introSlider .carousel .indicators .indicator-item.active{
+  border: none $important;
+}
+
+.intro-slider-page .carousel .indicators .indicator-item.active {
+  border: none $important;
+}
+
+// Tabs
+.tabs-vertical {
+  .tabs {
+    white-space: normal $important;
+  }
+}

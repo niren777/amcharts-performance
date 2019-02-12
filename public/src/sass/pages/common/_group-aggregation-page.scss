@@ -1,0 +1,232 @@
+//scss-lint:disable all
+
+.create-aggregation {
+  .card-content {
+    .row {
+      margin-bottom: 0 $important;
+		}
+ }
+
+  .card-action {
+    text-align: right;
+  }
+}
+
+.create-aggregation {
+  .stepper .step {
+    .start-section {
+			img {
+				max-height: 90px;
+				max-width: 100%;
+			}
+
+			.text-over-flow {
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+		}
+
+		.build-section {
+			.btn-md-flat {
+				font-size: 18px;
+			}
+
+			.carousel.carousel-slider .carousel-item {
+				min-height: 150px $important;
+			}
+			.carousel .indicators .indicator-item {
+				margin: 0 4px $important;
+
+				&.active {
+					height: 10px;
+					width:10px;
+				}
+			}
+
+			.section {
+				margin-top: 10px;
+				text-align: center;
+
+				h1 {
+					font-size: 30px;
+					height: 55px;
+					line-height: 55px;
+					margin-top: 10px;
+				}
+
+				.btn-md-flat {
+					margin-top: -10px;
+				}
+
+				.separator-1 {
+					border-right: 1px solid $white;
+				}
+			}
+		}
+
+   .photograph-section {
+			.card-action {
+				clear: both;
+			}
+
+			.tile {
+				float: left;
+				margin: 1%;
+				width: 23%;
+
+				span {
+			    display: block;
+          overflow: hidden;
+			    padding-bottom: 50%;
+           position: relative;
+
+					img {
+						display: block;
+						height: auto;
+					  position: absolute;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+.add-aggregation-page {
+  margin-bottom: 45px;
+
+  .collection {
+    @extend %list-collection-style;
+	}
+
+	h3 {
+		font-size: 22px;
+		line-height: 32px;
+		padding: 20px 10px;
+		text-align: center;
+	}
+
+	.bottom-bar-white {
+		a {
+			height: 60px;
+			line-height: 60px;
+			margin-top: 0 $important;
+
+			i {
+				vertical-align: $middle;
+			}
+		}
+	}
+
+	.collection {
+		.collection-item {
+			.title {
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+.scan-child-unit-page {
+  margin-bottom: 45px;
+  padding: 0 16px $important;
+
+  .scan-section {
+		margin-bottom: 10px;
+	}
+
+	p {
+		font-size: 20px;
+		padding: 10px 0;
+	}
+
+	img {
+		height: 100px;
+		max-width: 100%;
+	}
+
+	h3 {
+		font-size: 20px;
+		line-height: 32px;
+		padding: 10px 0 30px;
+	}
+
+	.bottom-bar-white {
+		a {
+			height: 60px;
+			line-height: 60px;
+			margin-top: 0 $important;
+
+			i {
+				vertical-align: $middle;
+			}
+		}
+
+		.done-btn {
+			margin-right: 30px;
+		}
+	}
+
+	.collection {
+		.collection-item {
+			.title {
+				font-size: 20px;
+				width: 92%;
+			}
+
+		.remove-btn {
+				color: $dark-red;
+				font-weight: bold;
+				margin-top: -22px;
+			}
+		}
+	}
+
+  .materialboxed {
+    left: 0 $important;
+    margin: 0 auto;
+    top: 0 $important;
+
+    &.active {
+      position: relative $important;
+	 }
+	}
+}
+
+.take-photograph-page {
+  margin-bottom: 45px;
+  padding: 10px 16px $important;
+
+	.image-placeholder {
+		border: 2px solid $cyan;
+		color: $cyan;
+    display: inline-table;
+		font-size: 40px;
+    height: 90px;
+		line-height: 100px;
+		margin: 1%;
+    text-align: center;
+    vertical-align: top;
+		width: 48%;
+  }
+
+  .photo-div {
+    float: left;
+    margin: 1%;
+    width: 48%;
+
+    span {
+      display: block;
+      overflow: hidden;
+      padding-bottom: 50%;
+      position: relative;
+
+				img { // scss-lint:disable
+					display: block;
+					height: auto;
+			  	position: absolute;
+					width: 100%;
+				}
+			}
+		}
+}

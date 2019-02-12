@@ -1,0 +1,24 @@
+//scss-lint:disable NestingDepth SelectorDepth
+.get-data-page {
+  @extend %separator;
+  @extend %list-collection-style;
+
+  .separator {
+    .label {
+      margin-left: -15px;
+		}
+	}
+
+  .list-with-child {
+    i {
+      &.circle {
+        background-color: transparent $important;
+        font-size: 30px $important;
+		  }
+		}
+
+    .title {
+      font-weight: 500;
+    }
+	}
+}

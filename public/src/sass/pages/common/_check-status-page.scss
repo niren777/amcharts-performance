@@ -1,0 +1,230 @@
+//scss-lint:disable SelectorDepth NestingDepth IdSelector VendorPrefix MergeableSelector
+.check-status-summary-page {
+  background-color: $grey-lighten-5;
+  margin-bottom: -20px;
+  padding: 10px;
+
+  .card {
+    margin: 0 0 10px $important;
+
+    .card-content {
+      padding-left: 0 $important;
+      padding-right: 0 $important;
+    }
+
+    .card-title {
+      margin: -10px 20px 10px;
+    }
+  }
+
+  .ct-label {
+    color: $black;
+    fill: $black;
+  }
+
+  .ct-legend {
+    margin-top: 15px;
+
+    li {
+      font-size: 16px;
+      height: 18px;
+      line-height: 18px;
+      padding-left: 27px;
+
+      &::before {
+        height: 16px;
+        width: 16px;
+      }
+    }
+  }
+
+  .card-tabs {
+    box-shadow: 0 6px 4px -4px $gray;
+
+    .tab {
+      a {
+        color: $cyan-lighten-3 $important;
+        font-size: 16px $important;
+
+        &.active {
+          color: $cyan $important;
+          font-size: 18px $important;
+        }
+      }
+    }
+
+    .indicator {
+      background: $cyan $important;
+      height: 3px $important;
+    }
+  }
+
+  .tag-type-chart-wrapper,
+  .points-remaining-chart-wrapper,
+  .temperature-chart-wrapper {
+    box-sizing: border-box;
+    // padding-bottom: 70%;
+    height: 300px;
+    position: relative;
+    width: 100%;
+  }
+
+  .alerts-chart-wrapper {
+    box-sizing: border-box;
+    // padding-bottom: 85%;
+    height: 250px;
+    position: relative;
+    width: 100%;
+  }
+
+  .alert-legend-div {
+    height: 105px;
+    position: relative;
+  }
+
+  .points-remaining-chart-wrapper,
+  .temperature-chart-wrapper {
+    animation: am-draw 4s;
+  }
+
+  .tag-type-chart,
+  .points-remaining-chart,
+  .temperature-chart,
+  .alerts-chart {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+
+  .amcharts-graph-g1 {
+    animation: am-draw 1s;
+    stroke-dasharray: 500%;
+  }
+
+  @-webkit-keyframes am-draw {
+    0% {
+      stroke-dashoffset: 500%;
+    }
+
+    100% {
+      stroke-dashoffset: 0%;
+    }
+  }
+}
+
+.tag-type-card {
+
+  .ct-legend {
+    text-align: center;
+
+    li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
+}
+
+.data-distribution-card {
+  .card-tabs {
+    margin-bottom: 10px;
+  }
+
+  .card-title {
+    display: inline-block;
+  }
+
+  .switch {
+    float: right;
+    margin-top: -18px;
+    padding-right: 20px;
+  }
+
+  .rotate {
+    top: 59%;
+  }
+}
+
+.alerts-card {
+  .card-content {
+    // padding-bottom: 75px;
+  }
+
+  .ct-legend {
+    margin-left: 15px;
+
+    li {
+      float: left;
+      margin-bottom: 15px;
+      width: 49.8%;
+     }
+  }
+
+  .rotate {
+    top: 39%;
+  }
+}
+
+.label-text {
+  color: $black;
+  font-size: 18px;
+  text-align: center;
+}
+
+.y-axis-label {
+  font-size: 14px $important;
+}
+
+.rotate {
+  left: 7%;
+  position: absolute;
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+
+.chart-area {
+  margin: 0 auto;
+  width: 96%;
+}
+
+.check-status-summary-page {
+  .check-chart-legends {
+    min-height: 45px;
+    padding: 0 16px;
+    text-align: center;
+
+    .right-separator {
+      border-right: 2px solid $black;
+    }
+
+    sup {
+      font-size: 60%;
+      font-weight: bold;
+      top: -.7em;
+    }
+
+    .details-unit {
+      color: $black;
+      font-size: 24px;
+      height: 27px;
+    }
+
+    .details-type {
+      color: $black;
+      font-size: 16px;
+      margin-top: 5px;
+    }
+
+    .epc-details-type {
+      font-size: 12px $important;
+    }
+
+    .date-time-stamp {
+      color: $black;
+
+      .icon-calendar {
+        margin-right: 5px;
+      }
+    }
+  }
+}

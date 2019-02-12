@@ -1,0 +1,27 @@
+@media only screen and (min-width: 0) {
+  em {
+    font-size: 100%;
+  }
+
+  body {
+    zoom: 100% $important;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  em {
+    font-size: 110%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  em {
+    font-size: 120%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  em {
+    font-size: 130%;
+  }
+}

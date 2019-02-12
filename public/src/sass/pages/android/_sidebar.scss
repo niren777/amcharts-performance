@@ -1,0 +1,33 @@
+//  unit toogle
+.switch {
+    label {
+        .lever {
+            &::after {
+                line-height: 1.6;
+            }
+        }
+
+        input[type=checkbox]:checked + .lever {
+            &::after {
+                line-height: 1.6;
+            }
+        }
+    }
+}
+
+.side-nav {
+  margin-left: -1px;
+  margin-top: -1px;
+}
+// /* sidebar overlay height */
+
+#sidenav-overlay {
+  @extend %height-full;
+  height: auto $important;
+  // z-index: 996 $important;
+}
+
+.sidebar {
+  background-color: $white ;
+    // box-shadow: 12px 0 15px -4px rgba(0, 0, 0, 0.16), -12px 0 8px -4px;
+}

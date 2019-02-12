@@ -1,0 +1,285 @@
+// scss-lint:disable all
+// Cutome icons in auth //
+
+#a0-lock.a0-theme-default .a0-icon-budicon-5::before {
+   content: "\e90e";
+  @extend %icon-font-family;
+}
+
+#a0-lock.a0-theme-default .a0-icon-budicon::before {
+  content: "\e912";
+  @extend %icon-font-family;
+}
+
+#a0-lock.a0-theme-default .a0-icon-budicon-2::before {
+  // content: 'Login';
+  @extend %icon-font-family;
+
+}
+
+#a0-lock.a0-theme-default .a0-icon-budicon-3::before {
+  content: "\e90c";
+  @extend %icon-font-family;
+}
+
+#a0-lock.a0-theme-default .a0-btn-small.a0-back {
+  background: transparent $important;
+  border-radius: 0 $important;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 15px;
+  left: 11px $important;
+  box-shadow: none $important;
+  color: #fff $important;
+  z-index: 100;
+  border: 0 $important;
+  cursor: pointer;
+  line-height: 57px;
+  font-size: -32px;
+  margin-top: -14px;
+
+  &:before {
+    content: "\e90c";
+    @extend %icon-font-family;
+    font-size: 24px;
+    color: #fff;
+  }
+
+  svg {
+    display: none;
+  }
+}
+
+#a0-lock.a0-theme-default .a0-panel .a0-icon-container .a0-image img {
+  height: $height4x $important;
+}
+
+#a0-lock.a0-theme-default .a0-iconbase, #a0-lock.a0-theme-default [class*=" a0-icon-"]:before, #a0-lock.a0-theme-default [class^=a0-icon-]:before{
+  @extend %icon-font-family;
+}
+
+#a0-lock.a0-theme-default .a0-panel .a0-password .a0-input-box i,
+#a0-lock.a0-theme-default .a0-panel .a0-repeatPassword .a0-input-box i {
+  font-size: $fontsize20 + 2px  $important;
+  left: 10px $important;
+  top: 9px $important;
+}
+
+#a0-lock.a0-theme-default .a0-panel .a0-email .a0-input-box i {
+  font-size: $fontsize16 $important;
+  top: 11px $important;
+}
+
+#a0-lock.a0-theme-default .a0-panel .a0-footer {
+  display: none $important;
+}
+
+.a0-spinner-css:after {
+  content: '\004E' $important;
+  font-family: infratab $important;
+}
+
+#a0-lock.a0-theme-default .a0-panel .a0-inputs {
+  border: 0;
+}
+
+#a0-lock.a0-theme-default .a0-panel .a0-all,
+#a0-lock.a0-theme-default .a0-panel .a0-forgot-pass {
+  color: $cyan;
+  display: block $important;
+  font-size: 17px;
+  margin-top: 25px;
+}
+
+#a0-lock.a0-theme-default .a0-panel .a0-error{
+  background-color: transparent $important;
+  color: $dark-red $important;
+  margin-top: -30px;
+}
+
+// AUTO APP BAR //
+
+#a0-lock .a0-panel {
+  width: $width100 $important;
+}
+
+.a0-icon-container {
+  @extend %box-bottom-shadow;
+  background-color: $cyan;
+  margin-bottom: $margin4x + 4px;
+}
+
+#a0-lock.a0-theme-default .a0-panel .a0-header h1 {
+  margin-top: 0 $important;
+  position: absolute;
+  left: 60px;
+  color: #fff $important;
+}
+
+.a0-mode-container,
+.a0-notloggedin .a0-mode {
+  margin: 0 auto;
+  margin-top: -20px;
+  width: 80% $important;
+}
+
+#a0-lock.a0-theme-default .a0-panel .a0-bg-gradient {
+  background-color: $white  $important;
+  opacity: 0 $important;
+}
+
+#a0-lock.a0-theme-default .a0-panel .a0-action button {
+  text-indent: 0 $important;
+  font-size: 22px;
+
+  &:after {
+    background: none $important;
+    background-size: 30px 30px;
+    // content: 'LOGIN';
+    font-size: 22px;
+    margin-left: 59px;
+    margin-top: 6px;
+    padding-top: 3px;
+    text-indent: 0;
+  }
+}
+#a0-lock.a0-theme-default .a0-panel .a0-close {
+  left: 0px $important;
+  right: none $important;
+  text-align: center $important;
+  color: $white;
+  font-size: $fontsize20 + 2px $important;
+  width: 9%;
+  padding-left: $padding2x;
+  padding-right: $padding1x;
+  // line-height: $line-height6x + 7px;
+  top: 32px $important;
+  height:25px $important;
+  border:none $important;
+  background-color: transparent $important;
+  box-shadow: none $important;
+
+  &:before {
+    content: "\e90c";
+    @extend %icon-font-family;
+  }
+
+  svg {
+    display: none;
+  }
+}
+
+.a0-animated,
+.a0-shake {
+  -webkit-animation: none $important;
+  animation: none $important;
+  -webkit-transition: none $important;
+  transition: none $important;
+}
+
+.a0-action {
+  margin-top: $margin3x $important;
+}
+
+#a0-lock.a0-theme-default .a0-panel .a0-email {
+  margin-bottom: $margin3x $important;
+}
+
+#a0-lock.a0-theme-default .a0-panel .a0-icon-container .a0-avatar {
+  background-color: transparent $important;
+  text-align: left;
+}
+
+#a0-lock.a0-theme-default .a0-popup .a0-centrix .a0-panel .a0-icon-container .a0-avatar {
+  background-color: transparent $important;
+  color: $white $important;
+  height: $height4x + 7px;
+  margin-top: $margin1x;
+  width: $width100 - 30% $important;
+}
+
+#a0-lock.a0-theme-default .a0-panel .a0-error {
+  font-size: $fontsize18 $important;
+}
+
+@media screen and (max-width: 767px) {
+  #a0-lock.a0-theme-default .a0-popup .a0-centrix .a0-panel .a0-icon-container {
+    height: $height6x + 6px $important;
+    min-height: $height6x + 6px $important;
+
+    .a0-avatar i {
+      color: $white $important;
+      display: initial;
+      font-size: $fontsize28 - 2px $important;
+      line-height: $line-height4x + 7px;
+      padding-top: 0 $important;
+    }
+  }
+}
+
+#a0-lock.a0-theme-default .a0-panel button.a0-primary {
+  @extend .z-depth-1;
+  background-color: $cyan $important;
+  border-radius: 4px $important;
+  font-weight: bold $important;
+  // top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 66% $important;
+}
+
+#a0-lock.a0-theme-default .a0-panel .a0-icon-container .a0-image {
+  color: $white;
+  line-height: 32px;
+  margin-left: 83px;
+  text-align: left;
+
+  img {
+    display: none;
+  }
+
+  &::before {
+    // content: 'Login';
+    font-family: 'icon';
+    font-size: 25px;
+    font-weight: 500;
+  }
+}
+
+#a0-lock.a0-theme-default .a0-switch .a0-active {
+  display: none;
+ }
+
+ #a0-lock.a0-theme-default .a0-switch {
+      border-radius: 12px;
+      width: 100%;
+
+      span {
+       font-size: 16px;
+       padding: 10px 0 7px $important;
+       width: 100% $important;
+      }
+   }
+
+   #a0-lock.a0-theme-default .a0-panel .a0-action button {
+    height: 60px $important;
+    line-height: 15px $important;
+  }
+
+  #a0-lock.a0-theme-default .a0-panel .a0-email .a0-input-box,
+  #a0-lock.a0-theme-default .a0-panel .a0-password .a0-input-box {
+    background-color: $white  $important;
+    border-bottom: 3px solid #f1f1f1 $important;
+    border-color: transparent;
+  }
+
+  #a0-lock.a0-theme-default .a0-panel .a0-email .a0-input-box.a0-error-input,
+  #a0-lock.a0-theme-default .a0-panel .a0-password .a0-input-box.a0-error-input {
+      border-bottom: 3px solid red $important;
+      border-color: transparent;
+  }

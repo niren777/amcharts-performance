@@ -1,0 +1,22 @@
+#a0-lock.a0-theme-default .a0-panel .a0-password input,
+#a0-lock.a0-theme-default .a0-panel .a0-password label {
+  font-size: $fontsize16;
+    // top: -3px $important;
+}
+
+// auth login page alignment //
+
+.a0-header h1 {
+  display: -webkit-inline-box $important;
+  padding: $padding0x $padding2x $important;
+}
+
+.a0-footer,
+h2.a0-error {
+  display: -webkit-inline-box $important;
+}
+
+.a0-create-account.a0-buttons-actions,
+.a0-notloggedin .a0-action button {
+  text-align-last: center $important;
+}

@@ -1,0 +1,74 @@
+.tag-status-page {
+    .collection {
+        .collection-item.avatar {
+            .circle {
+                height: 50px;
+                width: 50px;
+                line-height: 50px;
+            }
+            .title {
+                font-size: $fontsize18;
+            }
+            p {
+                font-size: $fontsize16;
+                padding-top: 3px $important;
+            }
+        }
+    }
+}
+.tab-content {
+    margin-top: 340px;
+    top:0;
+    height: 52%;
+    position: fixed;
+    width: $width100;
+    overflow: auto;
+    bottom: 0;
+    .collection .collection-item {
+        &:last-child {
+            margin-bottom: 40px;
+        }
+        &:first-child {
+            margin-top: 5px;
+        }
+    }
+}
+.temperature-alert .collection .collection-item.avatar .circle {
+    sup {
+        font-size: 75% $important;
+    }
+}
+.info {
+    .collection {
+        .collection-item {
+            .title {
+                font-size: $fontsize18;
+            }
+            p {
+                font-size: $fontsize16;
+                padding-top: 3px $important;
+            }
+        }
+    }
+}
+.collection .collection-item.avatar {
+    padding-left: 82px $important;
+}
+.temperature-alert-div h1 sup {
+    font-size: 40% $important;
+    top: -1.6em $important;
+    margin-left: -20px $important;
+}
+.status-temperature sup {
+    top: -1.1em;
+    font-size: 50%;
+}
+life-alert .collection .collection-item.avatar {
+    span.circle {
+        background: transparent;
+    }
+}
+
+.statusMarBottom{
+    margin-bottom: 40px;
+}

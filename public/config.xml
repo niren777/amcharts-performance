@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget android-packageName="chart.amchart.performance" android-versionCode="1" id="amchart.performance" version="0.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Amchart Performance</name>
+    <description>
+       Amchart Performance
+    </description>
+    <author email="muralid@infratab.in" href="http://infratab.in/">
+        Infratab
+    </author>
+    <content src="index.html" />
+    <access origin="https://cdn.auth0.com/*" />
+    <access origin="https://accounts.infratab.in" />
+    <access origin="https://accounts.infratab.com" />
+    <access launch-external="yes" origin="mailto:*" />
+    <allow-navigation href="*" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="10000" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="SplashScreenBackgroundColor" value="#795548" />
+    <preference name="AndroidLaunchMode" value="singleTask" />
+    <platform name="android">
+        <splash density="port-hdpi" src="www/img/splash/android/splash-port-hdpi.png" />
+        <splash density="port-ldpi" src="www/img/splash/android/splash-port-ldpi.png" />
+        <splash density="port-mdpi" src="www/img/splash/android/splash-port-mdpi.png" />
+        <splash density="port-xhdpi" src="www/img/splash/android/splash-port-xhdpi.png" />
+        <icon density="ldpi" src="www/img/splash/android/ldpi.png" />
+        <icon density="mdpi" src="www/img/splash/android/mdpi.png" />
+        <icon density="hdpi" src="www/img/splash/android/hdpi.png" />
+        <icon density="xhdpi" src="www/img/splash/android/xhdpi.png" />
+    </platform>
+    <engine name="android" spec="~6.1.0" />
+    <plugin name="cordova-plugin-inappbrowser" spec="~1.6.1" />
+    <plugin name="cordova-plugin-crosswalk-webview" spec="~2.3.0" />
+    <plugin name="cordova-android-support-gradle-release" spec="^1.2.0">
+        <variable name="ANDROID_SUPPORT_VERSION" value="26.+" />
+    </plugin>
+</widget>

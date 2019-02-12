@@ -1,0 +1,112 @@
+//scss-lint:disable QualifyingElement NestingDepth SelectorDepth
+.log-page {
+  @extend %input-error-with-inactive-label;
+
+  .log-container {
+    padding: 0 16px;
+  }
+
+  .tabs {
+    @extend %nav-shadow;
+    float: none $important;
+    z-index: 1;
+
+    .indicator {
+      display: none;
+    }
+  }
+
+  .input-field {
+    margin-bottom: 20px;
+
+    .prefix.active {
+      color: $cyan;
+    }
+  }
+
+  i {
+    font-style: normal;
+  }
+
+  .icon-location {
+    font-size: 40px;
+  }
+
+  .icon-mail,
+  .icon-briefcase {
+    font-size: 26px;
+    margin-top: 10px;
+  }
+
+  .select-biz-steps {
+    margin-left: 14%;
+    margin-top: -2%;
+    width: 84%;
+  }
+
+  .select-tagstep-label {
+    top: -24px $important;
+  }
+
+  .select-wrapper span.caret {
+    color: transparent;
+    font-size: 30px $important;
+    top: 6px;
+
+    &::after {
+      color: $black $important;
+      content: '\f0d7';
+      font-family: FontAwesome;
+    }
+  }
+
+  .collection {
+    .collection-item.avatar {
+      padding-left: 87px;
+
+      .circle {
+        border: 1px solid $cyan-lighten-3;
+        color: $cyan;
+        font-size: 24px $important;
+        height: 60px $important;
+        line-height: 60px $important;
+        text-align: center;
+        width: 60px $important;
+      }
+
+      .title {
+        @extend %truncate;
+        color: $black;
+        font-size: 20px;
+      }
+
+      p {
+        @extend %truncate;
+        color: $grey-darken-1 $important;
+      }
+    }
+  }
+}
+
+.log-button-div {
+  margin-left: 60px;
+  margin-top: 20px;
+
+  .reset-btn {
+    background-color: $red-accent-2;
+  }
+
+  .btn-md {
+    margin-right: 10px;
+  }
+}
+
+.select-activ {
+  .icon-map-o {
+    color: $cyan $important;
+  }
+}
+
+.margin-top {
+  margin-top: 30px;
+}

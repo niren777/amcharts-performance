@@ -1,0 +1,221 @@
+//scss-lint:disable QualifyingElement SelectorDepth NestingDepth
+.nfc-action-page {
+  @extend %wrapper-center;
+  padding: $padding1x;
+  text-align: center;
+  width: $width100;
+
+  .batch {
+    margin-bottom: 30px;
+
+    .tag-state {
+      border-radius: 2px;
+      color: $white;
+      font-size: 25px;
+      padding: 10px 20px;
+      text-transform: uppercase;
+    }
+  }
+
+  img {
+    margin-bottom: $margin3x;
+    width: $width80 + 5%;
+  }
+
+  p {
+    font-size: $fontsize20 + 2px;
+    margin-bottom: $margin3x;
+    text-align: center;
+  }
+
+
+}
+
+.check-point-page,
+.flash-led-page {
+  margin-top: 10px;
+  padding: 0 16px;
+
+  .badge-div {
+    margin-bottom: 20px;
+  }
+
+  .input-field {
+    margin-top: -13px;
+  }
+
+  .dropdown-content {
+    max-height: 230px $important;
+    right: 0 $important;
+  }
+
+  .select-wrapper span.caret {
+    font-size: 24px;
+  }
+}
+
+.nfc-event-page {
+  .flexiable-tap-area {
+    background-color: $cyan;
+    height: 60px;
+  }
+
+  .grid-btn {
+    margin-top: -50px;
+  }
+
+  .grid-item {
+    padding: 0 10px $important;
+
+    .card-content {
+      height: 150px;
+      text-align: center;
+
+      span {
+        font-size: 23px;
+        line-height: 103px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.sessio-flexible-area {
+  @extend %z-depth-1;
+  height: 330px;
+  margin-bottom: -1px;
+  margin-top: -1px;
+  padding: 16px 0 $important;
+  position: $position-relative;
+  width: 100%;
+
+  img {
+    margin-top: 50px;
+    width: 200px;
+
+    &.change-session-section {
+      margin-top: 30px;
+    }
+
+    &.action-session-section {
+      margin-top: 0;
+    }
+  }
+
+  .btns-section {
+    margin-top: 10px;
+  }
+
+  .total-tags {
+    color: $blue-darken-4;
+    font-size: 20px;
+    margin-top: 5px;
+  }
+}
+
+.tag-list-container {
+  height: 55%;
+  overflow: scroll;
+  padding: 10px;
+  padding-bottom: 90px;
+  position: fixed;
+  width: 100%;
+
+  th {
+    padding-bottom: 10px;
+  }
+
+  td {
+    padding: 16px $important;
+
+    &.time-column {
+      font-size: 12px;
+    }
+  }
+}
+
+.choose-mode-modal {
+  .switch {
+    line-height: 0;
+
+    label input[type=checkbox]:checked+.lever::after {
+      background-color: $cyan-darken-2 $important;
+      left: 45px;
+    }
+
+    .lever {
+      background: $cyan-lighten-3 $important;
+      border-radius: 15px;
+      height: 30px;
+      top: 0;
+      width: 70px;
+
+      &::after {
+        background-color: $cyan-darken-2 $important;
+        height: 35px;
+        left: -4px;
+        top: -3px;
+        width: 35px;
+      }
+    }
+  }
+
+  .switch-label {
+    font-size: 20px $important;
+    margin-top: 5px;
+  }
+
+  [type="checkbox"].filled-in:checked+label::after {
+    background-color: $cyan $important;
+    border-color: $cyan $important;
+  }
+
+  [type="checkbox"]+label {
+    line-height: 21px $important;
+  }
+}
+
+.nfc-session-page {
+  .btn-large {
+    font-size: 18px $important;
+
+    i {
+      font-size: 20px $important;
+      line-height: initial $important;
+      margin-right: 4px $important;
+
+      &.end-icon {
+        font-size: 18px $important;
+      }
+    }
+  }
+
+  .page-with-dropdown {
+    margin-top: 0 $important;
+  }
+
+  .session-dropdown-section {
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+    .input-field {
+      margin: 0 auto;
+      width: 80%;
+
+      .caret {
+        font-size: 17px $important;
+      }
+    }
+  }
+}
+
+.session-success {
+  .title {
+    color: $blue-grey;
+    font-size: 19px $important;
+  }
+
+  .details {
+    font-size: 18px $important;
+  }
+}

@@ -1,0 +1,67 @@
+// Bottom bar styles
+.bottom-bar {
+  background-color: $darker-gary;
+  bottom: 0;
+  height: $height6x;
+  left: 0;
+  margin: 0 auto;
+  position: fixed;
+  right: 0;
+
+  a {
+    color: $white;
+    font-size: $fontsize20;
+    margin-top: $margin1x + 2px;
+    text-align: center;
+    width: $width50 - 2%;
+
+    i {
+      padding-right: 6px;
+    }
+
+    &:first-child {
+      border-right: 1px solid $white;
+    }
+  }
+}
+
+// Bottom bar white styles
+.bottom-bar-white {
+  background-color: $graay-light;
+  bottom: 0;
+  height: $height6x;
+  left: 0;
+  margin: 0 auto;
+  position: fixed;
+  right: 0;
+
+  .btn-flat {
+    padding: 0 16px $important;
+  }
+
+  a {
+    color: $black;
+    font-size: $fontsize20;
+    margin-top: $margin1x + 2px;
+
+    i {
+      font-size: 28px;
+      padding: 0 8px;
+    }
+  }
+}
+
+// Only filter button in bottom bar styling //
+.width-full {
+  border-right: none $important;
+  width: $width100 $important;
+}
+
+// Running summary end button style //
+.header-end-summary {
+  color: $dark-red;
+  font-size: $fontsize20;
+  line-height: $line-height6x + 6px;
+  margin: $margin0x 2px;
+  padding: $padding0x;
+}

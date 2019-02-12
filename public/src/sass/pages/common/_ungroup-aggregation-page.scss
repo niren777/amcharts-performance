@@ -1,0 +1,12 @@
+.break-aggregation-confirm-page {
+  @extend %separator;
+
+  p {
+    font-size: 21px;
+    padding: 15px 10px 20px;
+  }
+
+  .button-div {
+    padding: 0 10px;
+  }
+}

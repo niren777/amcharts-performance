@@ -1,0 +1,18 @@
+{
+	"windows":{
+		"release":{
+			"publisherId":"",
+			"packageCertificateKeyFile":"path/to/.pfx file",
+			"packageThumbprint":""
+		}
+	},
+	"android": {
+         "release": {
+             "keystore": "path/to/.keystore file",
+             "storePassword": "",
+             "alias": "",//alias name
+             "password" : "",//password
+             "keystoreType": ""
+         }
+     }
+}

@@ -1,0 +1,76 @@
+.centered-button-page,
+.handover-page {
+  @extend %wrapper-center;
+  width: $width100;
+
+  button {
+    font-size: 20px;
+    margin: 30px 0;
+ 	}
+
+  h1 {
+    font-weight: 700;
+  }
+
+  .buttons-icon {
+    line-height: 53px $important;
+
+    .icon-nfc {
+      font-size: 18px;
+    }
+  }
+}
+
+.handover-confirmation-code-page {
+  @extend %wrapper-center;
+  margin-top: 30px;
+  padding: 0 10px $important;
+  width: $width100;
+
+  .loading-text {
+    font-size: 18px;
+    padding-bottom: 100px;
+ 	}
+
+  canvas {
+    margin-bottom: 50px;
+    width: 90%;
+	}
+
+  p {
+    margin-top: 15px;
+	}
+
+  .tip {
+    font-size: 20px;
+
+    .fa-lightbulb-o {
+      padding-right: 5px;
+		}
+	}
+}
+
+.handover-notvalidate-page {
+  @extend %list-collection-style;
+  padding: 0 10px $important;
+
+  .collection {
+    border: 1px solid $border-color;
+    margin: 15px 0;
+
+    p {
+      margin-top: -5px $important;
+    }
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 15px 0 30px;
+	}
+
+  button {
+    font-size: 18px;
+    margin: 20px 0 30px;
+	}
+}

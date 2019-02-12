@@ -1,0 +1,174 @@
+//scss-lint:disable ColorVariable SelectorDepth NestingDepth
+.inspection-note-page {
+  padding: 10px 16px;
+
+  h2 {
+    font-size: 21px;
+    margin-bottom: 10px;
+  }
+
+  button {
+    margin-top: 15px;
+  }
+
+  .yes-options {
+    margin-left: 30px;
+
+    .radio span {
+      @extend %truncate;
+      font-size: 18px $important;
+      line-height: 25px $important;
+      margin-top: -35px $important;
+      width: 92% $important;
+    }
+  }
+
+  .checkbox {
+    height: $height3x - 2px $important;
+    margin-bottom: 8px $important;
+
+    span {
+      color: $gray;
+      font-size: 19px;
+      line-height: $line-height3x - 5px $important;
+    }
+
+    &.active span {
+      color: #262626 $important;
+    }
+  }
+
+  .radio {
+    margin-bottom: 0;
+
+    &.active span {
+      color: #262626 $important;
+    }
+  }
+
+  .damage-section {
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+    .radio {
+      margin-bottom: 10px;
+    }
+  }
+
+  .handover-section {
+    .collection {
+      @extend %list-collection-style;
+      border: 1px solid #e0e0e0;
+      margin: 15px 0;
+
+      p {
+        margin-top: -5px $important;
+      }
+    }
+
+    .message {
+      font-size: 18px;
+      line-height: 30px;
+      margin: 20px 0;
+    }
+  }
+
+  .grade-section {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 95%;
+
+    h2 {
+      margin-bottom: 15px;
+      margin-left: -10px;
+    }
+  }
+
+  .clear-btn {
+    background-color: $red-accent-2;
+  }
+}
+
+.photo-section {
+  p {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  img {
+    height: 92px;
+    margin: 5px 10px 5px 0;
+    text-align: center;
+    width: 30%;
+  }
+
+  .photo-placeholder {
+    border: 2px solid #00bcd4;
+    color: #00bcd4;
+    display: inline-table;
+    font-size: 40px;
+    height: 90px;
+    line-height: 90px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+    text-align: center;
+    vertical-align: top;
+    width: 30%;
+  }
+}
+
+.grade-slider-tip {
+  background-color: #d9edf7;
+  border: 1px solid #bce8f1;
+  color: #31708f;
+  font-size: 14px;
+  line-height: 1.3;
+  margin-top: 65px;
+  padding: 6px;
+
+  .tipicon {
+    font-size: 18px;
+    text-align: center;
+    width: 20px;
+  }
+}
+
+//scss-lint:disable all
+.noUi-horizontal .noUi-handle {
+  @extend %z-depth-1;
+  background-color: $cyan;
+  border: none $important;
+  border-radius: 50% $important;
+  height: 30px $important;
+  width: 30px $important;
+}
+
+.noUi-connect {
+  background-color: transparent $important;
+}
+
+.noUi-target.noUi-connect {
+  box-shadow: none $important;
+}
+
+.noUi-handle:after,
+.noUi-handle:before {
+  background-color: transparent $important;
+}
+
+.noUi-horizontal {
+  height: 20px $important;
+}
+
+.noUi-pips-horizontal {
+  padding: 14px 0 $important;
+
+  .noUi-value-large {
+    color: #616161;
+    font-size: 22px;
+  }
+
+  .noUi-value-sub {
+    font-size: 15px $important;
+  }
+}

@@ -1,0 +1,16 @@
+.your-summaries-page,.history-page{
+    .collection {
+        .collection-item {
+        	.title{
+        		margin-top: 5px $important;
+        	}
+        	p{
+        		margin-top: 5px $important;
+        	}
+        }
+    }
+}
+
+.active .square-btn div:before{
+	margin-top: -38px $important;
+}

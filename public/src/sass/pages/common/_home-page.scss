@@ -1,0 +1,141 @@
+ // scss-lint:disable SelectorDepth NestingDepth
+.home-page {
+  .home-flexible-area {
+    overflow: hidden;
+    text-align: center;
+
+    img {
+      display: -webkit-box;
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+
+  .get-home-footer {
+    height: 370px $important;
+
+    .scan-qr-btn {
+      width: 385px $important;
+    }
+  }
+
+  .home-footer {
+    background-color: $white;
+    bottom: 0;
+    height: 320px;
+    position: fixed;
+
+    h3 {
+      font-size: 30px;
+      margin: 20px 0 15px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      padding: 0 15px;
+      text-align: center;
+    }
+
+    button {
+      font-size: 20px;
+      margin-bottom: 20px;
+
+      .runs-btn-icon {
+        font-size: 18px;
+      }
+    }
+
+    .width2x {
+      width: 200px;
+    }
+
+    .explore {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .get-data-btn {
+      line-height: 53px $important;
+
+      .icon-nfc {
+        font-size: 18px;
+      }
+    }
+  }
+
+}
+
+.custom-home-page {
+  .welcome-message {
+    @extend %center;
+
+    h1 {
+      @extend %truncate;
+      margin: 20px 10px 10px;
+    }
+
+    h3 {
+      margin: 0 10px 35px;
+    }
+  }
+
+  .card-action {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .card-content {
+    height: 165px;
+    text-align: center;
+
+    img {
+      @extend %z-depth-1;
+      border-radius: 50%;
+      margin: 10px 0;
+      width: 100px;
+    }
+
+    a {
+      font-size: 20px;
+    }
+  }
+
+  .card {
+    margin: 2px $important;
+  }
+}
+
+@media (min-height: 700px) and (max-height: 800px) {
+  .home-page {
+    .home-flexible-area {
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      img {
+        bottom: 320px;
+        position: fixed;
+      }
+
+      &.get-home-header {
+        img {
+          bottom: 370px $important;
+        }
+      }
+    }
+  }
+}
+
+button {
+  .runs-btn-icon {
+    font-size: 18px;
+    line-height: 55px $important;
+    margin-right: 3px;
+  }
+}

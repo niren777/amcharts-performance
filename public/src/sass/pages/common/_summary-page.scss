@@ -1,0 +1,74 @@
+//scss-lint:disable NestingDepth
+.summary-page {
+  .summary-flexible-area {
+    @extend %z-depth-1;
+    height: 335px;
+    margin-bottom: -1px;
+    margin-top: -1px;
+    padding: 16px 0 $important;
+    position: $position-relative;
+
+    h1 {
+      padding-bottom: 11px;
+      text-align: center;
+    }
+  }
+
+  .legend-section {
+    // height: 100vh;
+    height: 55%;
+    overflow: auto;
+    padding-bottom: 70px;
+    position: fixed;
+    top: 415px;
+    width: 100%;
+  }
+
+  .pie-chart-wrapper {
+    box-sizing: border-box;
+    padding-bottom: 60%;
+    position: relative;
+    width: 100%;
+  }
+
+  .pie-chart {
+    height: 310px;
+    margin-top: -20px;
+    position: absolute;
+    width: 100%;
+  }
+
+  .bottom-bar {
+    a {
+      border: none $important;
+      font-size: 17px;
+      width: 100%;
+    }
+  }
+
+  .ct-legend {
+    padding-left: 40px;
+    position: static $important;
+
+    li {
+      font-size: 20px;
+      height: 25px;
+      line-height: 25px;
+      margin-bottom: 17px;
+      padding-left: 35px;
+
+      &::before {
+        height: 25px $important;
+        width: 25px $important;
+      }
+
+    }
+  }
+
+  // .pie-chart {
+  //   .ct-label {
+  //     fill: $white;
+  //     font-weight: bold;
+  //   }
+  // }
+}

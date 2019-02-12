@@ -1,0 +1,55 @@
+.wrapper {
+  margin-bottom: -$margin2x;
+  min-height: 200vh;
+}
+
+.landing-page {
+  @extend %wrapper-center;
+  margin-top: 10px;
+  width: $width100;
+
+  .icon-div {
+    img {
+      width: 100px;
+    }
+  }
+
+  div {
+    // &:first-child {}
+    &:nth-child(2) {
+      margin-bottom: $margin4x + 5px;
+    }
+
+    &:nth-child(3) {
+      margin-bottom: $margin2x;
+    }
+  }
+
+  .circle {
+    background-color: $white $important;
+    margin-bottom: $margin2x + 3px;
+  }
+
+  .btn {
+    background-color: $white $important;
+    color: $cyan $important;
+    font-size: 18px;
+    margin-bottom: $margin3x;
+    width: 220px;
+  }
+
+  a {
+    color: $white;
+    font-size: 20px;
+  }
+
+  .btn-md {
+    line-height: 41px $important;
+  }
+}
+
+.cloud-info-messgae {
+  font-size: 14px $important;
+  line-height: 20px;
+  margin-bottom: 10px;
+}

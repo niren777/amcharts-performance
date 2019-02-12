@@ -1,0 +1,120 @@
+//scss-lint:disable SelectorDepth NestingDepth
+//===================== Scroll styling ============================ //
+.scroll {
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+div {
+  .scroll {
+    height: 700px;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      background: transparent;
+      display: block $important;
+      width: 12px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      @include box-shadow(inset, 0, 0, 6px, $black-05);
+      background: $cloud;
+      border-radius: 10px;
+    }
+
+    &:hover::-webkit-scrollbar {
+      background: transparent;
+    }
+
+    > div {
+      height: 1000px;
+    }
+  }
+}
+
+
+// List of legal //
+
+.list-of-legal-page {
+  .collection-item {
+    display: table;
+    min-height: $height7x;
+    width: $width100 $important;
+
+    .fa-angle-right {
+      color: $title-gray-color;
+      font-size: $fontsize30;
+      margin-top: 6px;
+    }
+
+    .title-section {
+      display: table-cell;
+      vertical-align: $middle;
+      width: $width90;
+
+      .title {
+        color: $title-gray-color;
+        font-size: $fontsize18;
+      }
+    }
+
+    .icon {
+      float: right;
+      width: $width10;
+    }
+
+  }
+}
+
+// Agreement page //
+.tag-end-user-license-agreement-page,
+.freshtime-product-license-agreement-page {
+  padding: $padding1x;
+
+  h5 {
+    font-size: $fontsize20;
+    line-height: $line-height3x;
+    margin-bottom: $margin1x;
+  }
+
+  h6 {
+    font-size: $fontsize18;
+    font-weight: 500;
+    margin-bottom: $margin1x + 5px;
+  }
+
+  p {
+    margin-bottom: $margin1x;
+    text-align: justify;
+  }
+
+  .list {
+    margin-left: $margin1x + 5px;
+
+    li {
+      margin-bottom: $margin1x;
+      text-align: justify;
+    }
+  }
+
+  .underline {
+    text-decoration: underline;
+  }
+}
+
+.software-license-page {
+  .collection-item {
+    padding-left: 16px $important;
+
+    .title {
+      @extend %truncate;
+      color: $title-gray-color;
+      font-size: $fontsize20 + 2px;
+    }
+
+    .license-type {
+      @extend %truncate;
+      color: $blue;
+    }
+  }
+}

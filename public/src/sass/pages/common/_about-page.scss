@@ -1,0 +1,92 @@
+.about-header {
+  background: url('../img/about.png') repeat center top $important;
+}
+
+.about-wrapper {
+  @extend %height-full;
+  background: $cyan url('../img/about.png') repeat center top;
+  margin: auto;
+  min-height: 100vh;
+  // min-height: $width50;
+  min-width: $width50;
+  position: $position-absolute;
+}
+
+.about-page {
+  @extend %wrapper-center;
+  width: $width100;
+
+  .app-version-section {
+    margin-bottom: $margin3x;
+    text-align: center;
+
+    h1 {
+      color: $white $important;
+      font-size: $fontsize36 $important;
+      margin: 0 $important;
+      text-align: center;
+    }
+
+    h6 {
+      color: $light-sky $important;
+      font-size: $fontsize20;
+      margin-top: $margin1x - 7px;
+    }
+  }
+
+  .logo-section {
+    margin-bottom: $margin3x;
+    text-align: center;
+
+    img {
+      height: $height10x + height7x;
+    }
+   }
+
+  .copy-right-section {
+    margin-bottom: $margin3x;
+    text-align: center;
+
+    p {
+      color: $light-sky $important;
+      font-size: $fontsize20;
+    }
+  }
+
+  .legal-section {
+    @extend %center;
+
+    a {
+      border-bottom: 1px dotted $yellow;
+      color: $yellow;
+      font-size: 25px;
+      text-transform: uppercase;
+      }
+    }
+
+  .circle {
+    background-color: $white $important;
+  }
+}
+
+.contact-section {
+  @extend %center;
+  bottom: 50px;
+  position: $position-fixed;
+
+  h4 {
+    color: $white $important;
+    font-size: $fontsize20 - 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    span {
+      font-size: $fontsize20 $important;
+    }
+  }
+
+  a {
+    font-size: $fontsize20 - 2px;
+    padding-top: $padding1x - 5px;
+  }
+}

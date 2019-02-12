@@ -1,0 +1,8 @@
+/* eslint-disable */
+var AUTH0_CLIENT_ID="";
+var AUTH0_DOMAIN="";
+var accountsServer="";
+var portalUrl="";
+var mixpanelToken="";
+var pingAPI="";
+var freshtimeCloud="";

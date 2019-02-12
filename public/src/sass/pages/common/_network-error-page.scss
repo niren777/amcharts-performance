@@ -1,0 +1,116 @@
+.network-error-page {
+  @extend %wrapper-center;
+  padding: 10px;
+  width: $width100;
+
+  img {
+    margin-bottom: -10px;
+    margin-top: 10px;
+    width: auto;
+  }
+
+  .network-error-info {
+    background: $bg-network-info;
+    border: 4px dotted $gray;
+    margin: 30px auto;
+    padding: 10px;
+    text-align: justify;
+
+    p:first-child {
+      padding-bottom: 10px;
+    }
+  }
+
+  h2 {
+    line-height: 31px;
+    margin: 12px 0;
+  }
+}
+
+@media (max-height: 450px) {
+  .network-error-page {
+    // background: $yellow-base $important;
+
+    img {
+      width: 40%;
+    }
+
+    h2 {
+      font-size: 18px $important;
+    }
+
+    .network-error-info {
+      height: 100px;
+      overflow: scroll;
+
+      &::-webkit-scrollbar {
+        background: transparent;
+        display: block $important;
+        padding-right: 4px;
+        width: 7px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        @include box-shadow(inset, 0, 0, 6px, $black-2);
+        background: $cloud;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+@media (max-height: 550px) {
+  .network-error-page {
+    // background: $yellow-base $important;
+
+    img {
+      width: 50%;
+    }
+
+    h2 {
+      font-size: 20px $important;
+    }
+
+    .network-error-info {
+      height: 120px;
+      overflow: scroll;
+
+      &::-webkit-scrollbar {
+        background: transparent;
+        display: block $important;
+        padding-right: 4px;
+        width: 7px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        @include box-shadow(inset, 0, 0, 6px, $black-2);
+        background: $cloud;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+@media (max-height: 600px) {
+  .network-error-page {
+    // background: $red;
+
+    .network-error-info {
+      height: 120px;
+      overflow: scroll;
+
+      &::-webkit-scrollbar {
+        background: transparent;
+        display: block $important;
+        padding-right: 4px;
+        width: 7px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        @include box-shadow(inset, 0, 0, 6px, $black-2);
+        background: $cloud;
+        border-radius: 5px;
+      }
+    }
+  }
+}

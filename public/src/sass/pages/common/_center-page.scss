@@ -1,0 +1,138 @@
+// To make loader center //
+
+.loader {
+  @extend %wrapper-center;
+}
+
+// QR code without organization page styling //
+
+.qr-error-without-org {
+  @extend %wrapper-center;
+  width: $width100;
+}
+
+// QR code error page //
+
+.qr-code-error-page {
+  @extend %wrapper-center;
+  padding: 0 10px;
+  width: $width100;
+
+  h3 {
+    line-height: inherit;
+  }
+
+  .qr-error-message {
+    padding: 10px 0;
+  }
+}
+
+// No internet connection and version expire page //
+
+.version-expire-page,
+.no-specialized-report-page,
+.no-organization-page {
+  @extend %wrapper-center;
+  width: $width100;
+
+  img {
+    width: 25%;
+  }
+
+  h1 {
+    margin: 10px;
+  }
+
+  h2 {
+    margin-bottom: 7px;
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+
+  button {
+    margin: 15px 0 $important;
+  }
+
+  h3 {
+    line-height: 30px;
+    padding: 5px;
+
+    a {
+      font-size: 20px;
+    }
+  }
+
+  .no-org-btn {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+// Setup message dialog design //
+.setup-message {
+
+  h1 {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  h4 {
+    font-size: 19px $important;
+    line-height: inherit;
+  }
+}
+
+// Disable touch action when no internet modal is open //
+
+.disable-touch {
+  pointer-events: none $important;
+  z-index: 999998 $important;
+}
+
+.disable-body {
+  display: block $important;
+  pointer-events: none $important;
+}
+
+.modal-z-index {
+  z-index: 999999 $important;
+}
+
+.registered-trademark {
+  font-size: 55% $important;
+}
+
+.word-break {
+  word-break: break-all;
+}
+
+.nfc-status-message {
+  @extend %wrapper-center;
+  width: $width100;
+
+  p {
+    font-size: 20px;
+    line-height: 27px;
+    padding-left: 10px;
+  }
+
+  .collection {
+    padding-left: 30px;
+
+    .circle {
+      background-color: transparent $important;
+      color: #00838f $important; // scss-lint:disable ColorVariable
+      font-size: 32px $important;
+      line-height: 50px $important;
+    }
+
+    .fa {
+      font-size: 32px;
+      line-height: 50px;
+    }
+  }
+}

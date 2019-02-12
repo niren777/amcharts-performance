@@ -1,0 +1,141 @@
+// scss-lint:disable all
+.your-summaries-page .collection {
+  .collection-item {
+    .title {
+      @extend %header-title-color;
+      font-size: $fontsize20;
+    }
+
+    p {
+      color: $gray;
+      font-size: 14px $important;
+    }
+
+    i {
+      font-style: normal $important;
+    }
+
+    .circle {
+      @extend %list-circle-style;
+    }
+
+    .runningTitle {
+      display: block;
+      width: $width80 + 1%;
+
+      .icon-circle {
+        font-size: 20px;
+        margin-top: -12px;
+        margin-right: -39px;
+      }
+    }
+
+    .badge {
+      background: red;
+      color: $white;
+      border-radius: 3px;
+      margin-top: -25px;
+      height: 21px;
+      line-height: 23px;
+    }
+  }
+}
+
+.your-summaries-page {
+  .separator {
+    @extend .bg-lighthGray;
+
+    span {
+      @extend .gray;
+      font-size: $fontsize14 + 1px;
+      line-height: $padding4x + 8px;
+      padding: $padding1x;
+    }
+  }
+}
+
+//blank summaries
+.blank-summaries-page {
+  @extend %wrapper-center;
+  width: 100%;
+
+  .btn,
+  .btn-large {
+    @extend .btn-cyan;
+  }
+
+  h4 {
+    @extend .center-align;
+    @extend %header-title-color;
+    font-size: $fontsize22;
+    margin: $margin1x $margin0x;
+  }
+
+  .btn {
+    margin-top: $margin1x + 5px;
+  }
+}
+
+//Only running summaries
+
+.running-summaries {
+  @extend %wrapper-center;
+  width: $width100;
+
+  h3 {
+    margin-bottom: $margin3x;
+  }
+}
+
+.only-running-summary {
+  .bottom-bar {
+    div {
+      color: $white;
+      display: inline-flex;
+      font-size: $fontsize20;
+      line-height: 66px;
+      margin-left: $margin3x;
+      margin-top: -3px;
+      width: 70%;
+
+      .cyan {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        // max-width: 260px;
+      }
+
+      .is-running {
+        margin-left: 5px;
+        width: 200px;
+      }
+    }
+
+    a {
+      border-right: none $important;
+      color: red;
+      float: right;
+      margin-right: 10px;
+      width: 20% $important;
+    }
+  }
+
+  .qr-code {
+    bottom: 130px;
+    left: 0;
+    margin: 0 auto;
+    position: fixed;
+    right: 0;
+
+    button {
+      padding: 0 20px;
+    }
+
+    h3 {
+      line-height: 30px;
+      margin-bottom: 30px;
+    }
+
+    }
+}

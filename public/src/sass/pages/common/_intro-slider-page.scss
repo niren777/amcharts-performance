@@ -1,0 +1,182 @@
+.btn,
+.btn-large {
+  margin-right: 10px $important;
+  padding: 0 16px $important;
+}
+
+$dark-yellow: #d3a543;
+$light-cyan: #42bde7;
+$light-pink: #ef4a52;
+$light-greens: #52c67b;
+$checkpoint: #227587;
+
+.bg-dark-yellow {
+  background-color: $dark-yellow $important;
+}
+
+.text-dark-yellow {
+  color: $dark-yellow $important;
+}
+
+.bg-light-cyan {
+  background-color: $light-cyan $important;
+}
+
+.text-light-cyan {
+  color: $light-cyan $important;
+}
+
+.bg-light-pink {
+  background-color: $light-pink $important;
+}
+
+.text-light-pink {
+  color: $light-pink $important;
+}
+
+.bg-light-greens {
+  background-color: $light-greens $important;
+}
+
+.text-light-greens {
+  color: $light-greens $important;
+}
+
+.bg-checkpoint {
+  background-color: $checkpoint;
+}
+
+.text-checkpoint {
+  color: $checkpoint;
+}
+
+// Tab style for setup page //
+
+.tabs {
+  &.tab-stepper {
+    @extend %nav-shadow;
+    float: none $important;
+    z-index: 1;
+
+    .tab {
+      text-align: left;
+    }
+
+    .indicator {
+      display: none;
+    }
+
+    .tab-text {
+      line-height: 48px;
+      margin-left: 6px;
+      text-transform: initial;
+    }
+
+    .circle {
+      color: $white;
+      font-size: 14px;
+      font-style: normal;
+      height: 28px;
+      line-height: 29px;
+      overflow: visible;
+      text-align: center;
+      width: 28px;
+    }
+  }
+}
+
+// Intro page //
+.intro-slider-page {
+  .btn,
+  .btn-large {
+    margin-right: 0 $important;
+  }
+
+  .indicator-z-index {
+    width: 100% $important;
+  }
+
+  .indicators {
+    margin: 0 auto;
+    width: 72%;
+  }
+
+  .tab-with-slider {
+    .carousel-item {
+      // scss-lint:disable all
+      img {
+        margin-top: 55px $important;
+        width: 90% $important;
+      }
+  }
+}
+// scss-lint:enable all
+  .carousel.carousel-slider {
+    height: 100% $important;
+    position: absolute;
+  }
+
+  .carousel-header {
+    overflow: hidden;
+    width: 100%;
+  }
+// scss-lint:disable all
+  .carousel .indicators .indicator-item {
+    background-color: transparent;
+    border: 2px solid $white;
+    height: 10px $important;
+    margin: 4px 4px 20px $important;
+    width: 10px $important;
+
+    &.active {
+      background-color: $white  $important;
+    }
+  }
+// scss-lint:enable all
+  .carousel-footer {
+    bottom: 0;
+    height: 300px $important;
+    position: fixed;
+    width: 100%;
+
+    h2 {
+      color: $white;
+      font-size: 28px $important;
+      padding: 15px 0;
+    }
+
+    p {
+      color: $white;
+      font-size: 18px $important;
+      height: 85px;
+      padding: 0 10px 5px;
+    }
+
+    button {
+      margin-top: 10px;
+    }
+  }
+}
+
+.indicators {
+  i {
+    color: $white;
+    font-size: 60px;
+    margin-top: -2px;
+    width: 60px;
+  }
+}
+
+.registered-trademark {
+  font-size: 55% $important;
+}
+
+@media (min-height: 700px) and (max-height: 800px) {
+  .intro-slider-page {
+    .carousel-header {
+      bottom: 300px;
+      position: fixed;
+      top: 30px;
+    }
+  }
+}

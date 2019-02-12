@@ -1,0 +1,105 @@
+{{#if (isEqual templateState 'showChart')}}
+<div class="check-status-summary-page">
+  <div class="col s12 android-jelly-layout">
+
+    <div id="tagType" class="tag-type-card">
+      <div class="card">
+        <div class="card-content">
+          <p class="card-title">Type of Tags</p>
+          <div class="tag-type-chart-wrapper">
+            <div id="tagTypeContainer" class="ct-chart tag-type-chart"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="dataDistribution" class="data-distribution-card">
+      <div class="card">
+        <div class="card-content">
+          <p class="card-title">Data distribution</p>
+            <div class="switch hide" id='unitSwitch'>
+              <label>
+                 <input  type="checkbox" id="unitCheckBox" {{#if (isEqual temperatureUnit 'F')}}checked=true{{/if}}>
+                 <span class="lever temp-toggle"></span>
+               </label>
+            </div>
+          <div class="card-tabs">
+            <ul class="tabs tabs-fixed-width">
+              <li class="tab distribution-tab"><a class="active" href="#pointsRemaining">Points Remaining</a></li>
+              <li class="tab distribution-tab temperature-tab"><a href="#temperatureTab">Temperature (&deg;{{temperatureUnit}})</a></li>
+            </ul>
+          </div>
+          <div id='pointsRemaining'>
+            <div class="points-remaining-chart-wrapper">
+              <div id="pointsRemainingChart" class="chart-area points-remaining-chart"></div>
+            </div>
+            <!-- For this release this feature is depricated so commited the code -->
+            {{!-- <div class="chart-overlay"></div> --}}
+            {{!-- <div class="overlay-text">Certain chart interactions are not working. <br> Please wait for the next update to see all the interactive features</div> --}}
+            <div class="row col s12 check-chart-legends">
+              <div class="col s6 right-separator">
+                <h4 class="details-unit" id='pointsRemainingValue'></h4>
+                <h6 class="details-type">Used</h6>
+              </div>
+              <div class="col s6">
+                <h4 class="details-unit" id='pointsNoOfTags'></h4>
+                <h6 class="details-type">Tags</h6>
+              </div>
+            </div>
+          </div>
+          <div id='temperature'>
+            <div class="temperature-chart-wrapper">
+              <div id="temperatureChart" class="chart-area temperature-chart"></div>
+            </div>
+            <!-- For this release this feature is depricated so commited the code -->
+            {{!-- <div class="chart-overlay"></div> --}}
+            {{!-- <div class="overlay-text">Certain chart interactions are not working. <br> Please wait for the next update to see all the interactive features</div> --}}
+            <div class="row col s12 check-chart-legends">
+              <div class="col s6 right-separator">
+                <h4 class="details-unit" id='temperatureValue'></h4>
+                <h6 class="details-type">Temperature</h6>
+              </div>
+              <div class="col s6">
+                <h4 class="details-unit" id='temperatureNoOfTags'></h4>
+                <h6 class="details-type">Tags</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="alerts" class="alerts-card">
+      <div class="card">
+        <div class="card-content">
+          <p class="card-title">Alerts triggered</p>
+          <div class="alerts-chart-wrapper">
+            <div id="alertsChartContainer" class="chart-area alerts-chart"></div>
+          </div>
+          <!-- For this release this feature is depricated so commited the code -->
+          {{!-- <div class="chart-overlay"></div> --}}
+          {{!-- <div class="overlay-text">Certain chart interactions are not working. <br> Please wait for the next update to see all the interactive features</div> --}}
+          <div class="row col s12 check-chart-legends">
+            <div class="col s6 right-separator" id='chartDetails'>
+            </div>
+            <div class="col s6 date-time-stamp" id='timeDetails'>
+            </div>
+          </div>
+          <div id="alertLegendDiv" class="alert-legend-div"></div>
+          <div id="noAlertsMessage" class="hide">
+            There are no triggered alerts recorded by this device for the selected period
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{{/if}}
+{{#if (isEqual templateState 'noFilteredCheckStatusActions')}}
+  <div class="row no-history-data-page">
+    <div class="col s12 center">
+      <h2>There are no check status actions recorded by this device for the selected period</h2>
+    </div>
+  </div>
+{{/if}}
