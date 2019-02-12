@@ -15,6 +15,7 @@ public/node_modules/
 
 public/build.json
 public/npm-debug.log
+public/package-lock.json
 public/res/
 
 *.keystore
